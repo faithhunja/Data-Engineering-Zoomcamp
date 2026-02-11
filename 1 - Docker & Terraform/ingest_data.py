@@ -36,7 +36,7 @@ parse_dates = [
 @click.option('--pg-db', default='ny_taxi', help='PostgreSQL database name')
 @click.option('--year', default=2021, type=int, help='Year of the data')
 @click.option('--month', default=1, type=int, help='Month of the data')
-@click.option('--target-table', default='yellow_taxi_data', help='Target table name')
+@click.option('--target-table', default='yellow_taxi_trips', help='Target table name')
 @click.option('--chunksize', default=100000,type=int, help='Chunk size for reading the data')
 
 def run(pg_user, pg_pass, pg_host, pg_port, pg_db, year, month, target_table, chunksize):
